@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lite"
     android:orientation="vertical"
-    android:layout_margin="20dp"
+    android:id="@+id/linearLayout"
     tools:context=".MainActivity">
 
     <Button
@@ -18,11 +19,11 @@
         android:text="Dark" />
 
     <Button
-        android:id="@+id/btnLight"
+        android:id="@+id/btnRead"
         android:fontFamily="monospace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="20dp"
-        android:text="Light" />
+        android:text="Read Mode" />
 </LinearLayout>
