@@ -1,5 +1,6 @@
 package com.ankitojha.testapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val btnRead = findViewById<Button>(R.id.btnRead)
         val btnDark = findViewById<Button>(R.id.btnDark)
         val layout = findViewById<LinearLayout>(R.id.linearLayout)
+        val btnPageChange = findViewById<Button>(R.id.btnPageChange)
 
        btnRead.setOnClickListener{
            layout.setBackgroundResource(R.color.yellow)
@@ -21,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         btnDark.setOnClickListener {
             layout.setBackgroundResource(R.color.black)
+        }
+
+        btnPageChange.setOnClickListener{
+            val intent = Intent(this, LayoutTestActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -26,4 +26,12 @@
         android:padding="10dp"
         android:layout_margin="20dp"
         android:text="Read Mode" />
+
+    <Button
+        android:id="@+id/btnPageChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:text="Goto Page 2" />
 </LinearLayout>
