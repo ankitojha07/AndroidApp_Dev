@@ -20,5 +20,8 @@ class LayoutTestActivity : AppCompatActivity() {
         btnChange.setOnClickListener {
             Toast.makeText(applicationContext, "Change pressed", Toast.LENGTH_SHORT).show()
         }
+        btnBlue.setOnClickListener{
+            Toast.makeText(applicationContext,"blue button pressed", Toast.LENGTH_SHORT).show()
+        }
     }
 }
